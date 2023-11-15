@@ -1,8 +1,10 @@
-\documentclass[9pt]{article}
+\documentclass[5pt]{article}
 
 \usepackage{sectsty}
 \usepackage{graphicx}
 \usepackage{amsmath}
+\usepackage{multicol}
+\usepackage{titlesec}
 \pagestyle{empty}
 
 % Margins
@@ -17,51 +19,109 @@
 \author{ Jorens Štekeļs}
 \date{\today}
 
+% \titleformat{\section}
+%   {\normalfont\Large\bfseries}{\thesection}{1em}{}  % Adjust the font size here
+
+\titlespacing*{\section}
+{0pt}{0ex plus 0ex minus 0ex}{0ex plus .2ex}
+
 \begin{document}
 
-\section{Patēriņa teorija}
 
+\vspace*{\fill} % Add space before the content
+\begin{multicols}{2}
+
+\centering
 \begin{align*}
-    I &= P_x  \cross Q_x + P_y \cross Q_y
+    \NULL
+
+    \vspace*{.25cm}
+    \intertext{\centering\textbf{Patēriņš}}
+    \vspace*{.25cm}
+
+    TU &= \displaystyle\sum_{i}^{n} U_i \\
+    \vspace*{.25cm}
+    \intertext{TU - Kopējais derīgums(Total Utility)}
+
+    \vspace*{.25cm}
+
+    MU &= \displaystyle\displaystyle\frac{\Delta U}{\Delta Q} \\
+    \vspace*{.25cm}
+    \intertext{MU - Galējais derīgums (Marginal Utility)}
+
+    \vspace*{.25cm}
+
+    I &= P_x  \cross Q_x + P_y \cross Q_y \\
+    \vspace*{.25cm}
+    \intertext{I - Budžets (Budget)}
+
+    \vspace*{.25cm}
+
+    \Delta I_{real} &= \Delta I_{nominal} - \Delta P_{level\%}\\
+    \vspace*{.25cm}
+    \intertext{\(\Delta I_{real}\) - Reālās izmaiņas ienākumos}
+
+    \vspace*{.25cm}
+    \vspace*{.25cm}
+
+    \vspace*{.25cm}
+    \intertext{\textbf{Ražošana}}
+    \vspace*{.25cm}
+
+    \vspace*{.25cm}
+
+    AP &= \displaystyle\frac{TP}{L} \\
+    \vspace*{.25cm}
+    \intertext{AP - Vidējais produkts (Average Product)}
+
+    \vspace*{.25cm}
+
+    MP &= \displaystyle\frac{\Delta TP}{\Delta L} \\
+    \vspace*{.25cm}
+    \intertext{MP - Galējais produkts (Marginal Product)}
+
+    \vspace*{.25cm}
+
+    TC &= FC + VC  \\
+    \vspace*{.25cm}
+    \intertext{TC - Kopējās izmaksas (Total Cost)}
+
+    \vspace*{.25cm}
+
+    ATC &= \displaystyle\frac{VC+FC}{Q} \\
+    \vspace*{.25cm}
+    \intertext{ATC - Vidējās kopējās izmaksas (Average Total Cost)}
+
+    \vspace*{.25cm}
+    
+    AVC &= \displaystyle\frac{VC}{Q} \\
+    \vspace*{.25cm}
+    \intertext{AVC - Vidējās mainīgās izmaksas (Average Variable Cost)}
+
+    \vspace*{.25cm}
+
+    AFC &= \displaystyle\frac{FC}{Q} \\
+    \vspace*{.25cm}
+    \intertext{AFC - Vidējās fiksētās izmaksas (Average Fixed Cost)}
+    \vspace*{.25cm}
+
+    \vspace*{.25cm}
+
+    MC &= \displaystyle\frac{\Delta TC}{\Delta Q} \\
+    \vspace*{.25cm}
+    \intertext{MC - Galējās izmaksas (Marginal Cost)}
+
+    \vspace*{.25cm}
+
+    \intertext{\textbf{Konkurence}}
+    \vspace*{.25cm}
+
+    MR &= \displaystyle\frac{\Delta TR}{\Delta Q} \\
+    \vspace*{.25cm}
+    \intertext{MR - Galējie ieņēmumi (Marginal Revenue)}
 \end{align*}
+\end{multicols}
 
-\begin{itemize}
-    \item $I$ – patērētāja budžets 
-    \item $P_x$ – preces $x$ cena 
-    \item $P_y$ – preces $y$ cena 
-    \item $O_x$ – preces $x$ daudzums 
-    \item $Q_y$ – preces $y$ daudzums 
-\end{itemize}
-
-\begin{align*}
-    \Delta I_{real} &= \Delta I_{nominal} - \Delta P_{level\%}
-\end{align*}
-
-\section{Ražošana}
-
-\begin{align*}
-	AP &= TP:L \\
-	MP &= \Delta TP:\Delta L \\
-	TC &= FC + VC  \\
-	ATC &= \frac{VC+FC}{Q} \\
-	AVC &= \frac{VC}{Q} \\
-	AFC &= \frac{FC}{Q} \\
-	MC &= \Delta TC:\Delta Q  
-\end{align*} 
-\begin{itemize}
-    % TK - mby expand
-    \item AP - vidējais produkts,
-    \item MP - galējais produkts,
-    \item ATC - vid. kop. produkts,
-    \item AVC - vid. mainīgais produkts,
-    \item AFC - vidējais fiksētais products,
-    \item L - laiks.
-\end{itemize}
-
-\section{Konkurence}
-
-\begin{align*}
-    MR &= \frac{\Delta TR}{\Delta Q}
-\end{align*}
-
+\vspace*{\fill} % Add space before the content
+\NULL
 \end{document}
